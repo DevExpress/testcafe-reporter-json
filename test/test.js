@@ -16,7 +16,7 @@ function createReport (withColors) {
 
     var plugin = pluginTestingUtils.buildReporterPlugin(pluginFactory, outStream);
 
-    plugin.chalk.enabled = withColors;
+    plugin.chalk.enabled = !plugin.noColors && withColors;
     plugin.symbols       = { ok: '✓', err: '✖' };
 
 

@@ -8,14 +8,14 @@ export default function () {
             endTime:    null,
             userAgents: null,
             passed:     0,
-            testCount:  0,
+            total:      0,
             fixtures:   []
         },
 
         reportTaskStart (startTime, userAgents, testCount) {
             this.report.startTime  = startTime;
             this.report.userAgents = userAgents;
-            this.report.testCount  = testCount;
+            this.report.total      = testCount;
         },
 
         reportFixtureStart (name, path) {

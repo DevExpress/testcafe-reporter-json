@@ -4,7 +4,7 @@
 This is the **JSON** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
 
 <p align="center">
-    <img src="https://raw.github.com/DevExpress/testcafe-reporter-json/master/media/preview.png" alt="preview" />
+    <img src="https://raw.githubusercontent.com/DevExpress/testcafe-reporter-json/9b5026aafe3db1bee3452ab498e3f6224b7c95e5/media/preview.png" alt="preview" />
 </p>
 
 ## Install
@@ -34,4 +34,4 @@ testCafe
 ```
 
 ## Author
-Developer Express Inc.(http://devexpress.com)
+Developer Express Inc. (https://devexpress.com)
