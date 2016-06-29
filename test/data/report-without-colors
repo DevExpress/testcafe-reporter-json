@@ -2,36 +2,35 @@
   "startTime": "1970-01-01T00:00:00.000Z",
   "endTime": "1970-01-01T00:15:25.000Z",
   "userAgents": [
-    "Chrome",
-    "Firefox"
+    "Chrome 41.0.2227 / Mac OS X 10.10.1",
+    "Firefox 47 / Mac OS X 10.10.1"
   ],
   "passed": 4,
   "total": 6,
   "fixtures": [
     {
-      "name": "fixture1",
+      "name": "First fixture",
       "path": "./fixture1.js",
       "tests": [
         {
-          "name": "fixture1test1",
+          "name": "First test in first fixture",
           "errs": [],
           "durationMs": 74000,
           "unstable": true,
           "screenshotPath": "/screenshots/1445437598847"
         },
         {
-          "name": "fixture1test2",
+          "name": "Second test in first fixture",
           "errs": [
-            "Chrome\nAssertion failed at step \"Step\":\n\neq([\"12345678901\"], [\"00000000000\"])\n\nArrays differ at index 0:\n\nExpected: [0]: \"12345678901\"\nActual:   [0]: \"00000000000\"\n                ^\n\nScreenshot: /screenshots/1445437598847/userAgent/1.Fail.png",
-            "Chrome\nAssertion failed at step \"Step\":\n\nnotEq(\"test\", \"test\")\n\nExpected: not \"test\"\nActual:   \"test\"",
-            "Firefox\nAssertion failed at step \"Step\":\n\nok(false)\n\nExpected: not null, not undefined, not false, not NaN and not ''\nActual:   false"
+            "Chrome 41.0.2227 / Mac OS X 10.10.1\nError on page \"http://example.org\":\n\nSome error\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n\nScreenshot: /screenshots/1445437598847/errors",
+            "Firefox 47 / Mac OS X 10.10.1\nThe specified selector does not match any element in the DOM tree.\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)"
           ],
           "durationMs": 74000,
           "unstable": false,
           "screenshotPath": "/screenshots/1445437598847"
         },
         {
-          "name": "fixture1test3",
+          "name": "Third test in first fixture",
           "errs": [],
           "durationMs": 74000,
           "unstable": false,
@@ -40,18 +39,18 @@
       ]
     },
     {
-      "name": "fixture2",
+      "name": "Second fixture",
       "path": "./fixture2.js",
       "tests": [
         {
-          "name": "fixture2test1",
+          "name": "First test in second fixture",
           "errs": [],
           "durationMs": 74000,
           "unstable": false,
           "screenshotPath": null
         },
         {
-          "name": "fixture2test2",
+          "name": "Second test in second fixture",
           "errs": [],
           "durationMs": 74000,
           "unstable": false,
@@ -60,13 +59,13 @@
       ]
     },
     {
-      "name": "fixture3",
+      "name": "Third fixture",
       "path": "./fixture3.js",
       "tests": [
         {
-          "name": "fixture3test1",
+          "name": "First test in third fixture",
           "errs": [
-            "Firefox\nAssertion failed at step \"Step\":\n\neq([\"12345678901\"], [\"00000000000\"])\n\nArrays differ at index 0:\n\nExpected: [0]: \"12345678901\"\nActual:   [0]: \"00000000000\"\n                ^"
+            "Firefox 47 / Mac OS X 10.10.1\n- Error in beforeEach hook -\nThe specified selector does not match any element in the DOM tree.\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)"
           ],
           "durationMs": 74000,
           "unstable": true,
