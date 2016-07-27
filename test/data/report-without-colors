@@ -22,8 +22,8 @@
         {
           "name": "Second test in first fixture",
           "errs": [
-            "Chrome 41.0.2227 / Mac OS X 10.10.1\nError on page \"http://example.org\":\n\nSome error\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n\nScreenshot: /screenshots/1445437598847/errors",
-            "Firefox 47 / Mac OS X 10.10.1\nThe specified selector does not match any element in the DOM tree.\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)"
+            "Error on page \"http://example.org\":\n\nSome error\n\nBrowser: Chrome 41.0.2227 / Mac OS X 10.10.1\nScreenshot: /screenshots/1445437598847/errors\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)",
+            "The specified selector does not match any element in the DOM tree.\n\nBrowser: Firefox 47 / Mac OS X 10.10.1\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)"
           ],
           "durationMs": 74000,
           "unstable": false,
@@ -65,7 +65,7 @@
         {
           "name": "First test in third fixture",
           "errs": [
-            "Firefox 47 / Mac OS X 10.10.1\n- Error in beforeEach hook -\nThe specified selector does not match any element in the DOM tree.\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)"
+            "- Error in beforeEach hook -\nThe specified selector does not match any element in the DOM tree.\n\nBrowser: Firefox 47 / Mac OS X 10.10.1\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)"
           ],
           "durationMs": 74000,
           "unstable": true,
@@ -73,5 +73,10 @@
         }
       ]
     }
+  ],
+  "warnings": [
+    "Was unable to take a screenshot due to an error.\n\nReferenceError: someVar is not defined",
+    "Was unable to take a screenshot due to an error.\n\nReferenceError: someOtherVar is not defined",
+    "Was unable to take screenshots because the screenshot directory is not specified. To specify it, use the \"-s\" or \"--screenshots\" command line option or the \"screenshots\" method of the test runner in case you are using API."
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-json",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "JSON TestCafe reporter plugin.",
   "repository": "https://github.com/DevExpress/testcafe-reporter-json",
   "author": {
@@ -34,6 +34,6 @@
     "normalize-newline": "^1.0.2",
     "publish-please": "^2.1.4",
     "read-file-relative": "^1.2.0",
-    "testcafe": "0.0.21"
+    "testcafe": "0.2.0-alpha"
   }
 }
