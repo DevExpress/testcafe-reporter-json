@@ -10,7 +10,7 @@ This is the **JSON** reporter plugin for [TestCafe](http://devexpress.github.io/
 ## Install
 
 ```
-npm install -g testcafe-reporter-json
+npm install testcafe-reporter-json
 ```
 
 ## Usage
