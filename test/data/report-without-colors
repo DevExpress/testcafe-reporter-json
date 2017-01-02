@@ -7,6 +7,7 @@
   ],
   "passed": 4,
   "total": 6,
+  "skipped": 1,
   "fixtures": [
     {
       "name": "First fixture",
@@ -55,6 +56,14 @@
           "durationMs": 74000,
           "unstable": false,
           "screenshotPath": null
+        },
+        {
+          "name": "Third test in second fixture",
+          "errs": [],
+          "durationMs": 0,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": true
         }
       ]
     },

@@ -9,6 +9,7 @@ export default function () {
             userAgents: null,
             passed:     0,
             total:      0,
+            skipped:    0,
             fixtures:   [],
             warnings:   []
         },
@@ -27,13 +28,17 @@ export default function () {
         reportTestDone (name, testRunInfo) {
             var errs = testRunInfo.errs.map(err => this.formatError(err));
 
+            if (testRunInfo.skipped)
+                this.report.skipped++;
+
             this.currentFixture.tests.push({
                 name,
                 errs,
 
                 durationMs:     testRunInfo.durationMs,
                 unstable:       testRunInfo.unstable,
-                screenshotPath: testRunInfo.screenshotPath
+                screenshotPath: testRunInfo.screenshotPath,
+                skipped:        testRunInfo.skipped
             });
         },
 
