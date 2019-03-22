@@ -1,11 +1,11 @@
 {
-  "name": "testcafe-reporter-json",
-  "version": "2.1.0",
-  "description": "JSON TestCafe reporter plugin.",
-  "repository": "https://github.com/DevExpress/testcafe-reporter-json",
+  "name": "testcafe-reporter-json-complete",
+  "version": "2.1.1",
+  "description": "JSON TestCafe reporter plugin (With all information available to the reporter).",
+  "repository": "https://github.com/htho/testcafe-reporter-json-complete",
   "author": {
-    "name": "Developer Express Inc.",
-    "url": "https://devexpress.com"
+    "name": "Hauke Thorenz",
+    "url": "https://github.com/htho/"
   },
   "main": "lib/index",
   "files": [

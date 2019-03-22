@@ -1,20 +1,15 @@
-# testcafe-reporter-json
-[![Build Status](https://travis-ci.org/DevExpress/testcafe-reporter-json.svg)](https://travis-ci.org/DevExpress/testcafe-reporter-json)
+# testcafe-reporter-json-complete
 
-This is the **JSON** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
+This is a fork the **JSON** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/DevExpress/testcafe-reporter-json/master/media/preview.png" alt="preview" />
-</p>
+This fork tries to proivde as much information as posible, while beeing compatible with the original testcafe-reporter-json.
+
+There will be come kind of redundancy.
 
 ## Install
 
-This reporter is shipped with TestCafe by default. In most cases, you won't need to install it separately.
-
-However, if you need to install this reporter, you can use the following command.
-
 ```
-npm install testcafe-reporter-json
+npm install testcafe-reporter-json-complete
 ```
 
 ## Usage
@@ -22,9 +17,8 @@ npm install testcafe-reporter-json
 When you run tests from the command line, specify the reporter name by using the `--reporter` option:
 
 ```
-testcafe chrome 'path/to/test/file.js' --reporter json
+testcafe chrome 'path/to/test/file.js' --reporter json-complete
 ```
-
 
 When you use API, pass the reporter name to the `reporter()` method:
 
@@ -33,9 +27,7 @@ testCafe
     .createRunner()
     .src('path/to/test/file.js')
     .browsers('chrome')
-    .reporter('json') // <-
+    .reporter('json-complete') // <-
     .run();
 ```
-
-## Author
-Developer Express Inc. (https://devexpress.com)
+Hauke Thorenz (https://github.com/htho/)
