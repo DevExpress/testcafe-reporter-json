@@ -26,7 +26,8 @@ module.exports = [
         method: 'reportFixtureStart',
         args:   [
             'First fixture',
-            './fixture1.js'
+            './fixture1.js',
+            { fixtureMetaKey1: 'fixtureMetaValue1', fixtureMetaKey2: 'fixtureMetaValue2' }
         ]
     },
     {
@@ -38,7 +39,8 @@ module.exports = [
                 durationMs:     74000,
                 unstable:       true,
                 screenshotPath: '/screenshots/1445437598847'
-            }
+            },
+            { testMetaKey1: 'testMetaValue1', testMetaKey2: 'testMetaValue2' }
         ]
     },
     {

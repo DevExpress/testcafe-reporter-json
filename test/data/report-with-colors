@@ -12,10 +12,19 @@
     {
       "name": "First fixture",
       "path": "./fixture1.js",
+      "meta": {
+        "fixtureMetaKey1": "fixtureMetaValue1",
+        "fixtureMetaKey2": "fixtureMetaValue2"
+      },
       "tests": [
         {
           "name": "First test in first fixture",
+          "meta": {
+            "testMetaKey1": "testMetaValue1",
+            "testMetaKey2": "testMetaValue2"
+          },
           "errs": [],
+          "errsRaw": [],
           "durationMs": 74000,
           "unstable": true,
           "screenshotPath": "/screenshots/1445437598847"
@@ -26,6 +35,181 @@
             "Error on page \"http://example.org\":\n\nSome error\n\nBrowser: Chrome 41.0.2227 / Mac OS X 10.10.1\nScreenshot: /screenshots/1445437598847/errors\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)",
             "The specified selector does not match any element in the DOM tree.\n\nBrowser: Firefox 47 / Mac OS X 10.10.1\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)"
           ],
+          "errsRaw": [
+            {
+              "TEMPLATES": {},
+              "userAgent": "Chrome 41.0.2227 / Mac OS X 10.10.1",
+              "screenshotPath": "/screenshots/1445437598847/errors",
+              "testRunState": "inTest",
+              "type": "uncaughtErrorOnPage",
+              "isTestCafeError": true,
+              "callsite": {
+                "filename": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\test-callsite.js",
+                "lineNum": 3,
+                "callsiteFrameIdx": 0,
+                "stackFrames": [
+                  {
+                    "functionName": "someFunc",
+                    "fileName": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\test-callsite.js",
+                    "lineNumber": 4,
+                    "columnNumber": 11,
+                    "source": "    at someFunc (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Object.<anonymous>",
+                    "fileName": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\test-callsite.js",
+                    "lineNumber": 8,
+                    "columnNumber": 5,
+                    "source": "    at Object.<anonymous> (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Module._compile",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 799,
+                    "columnNumber": 30,
+                    "source": "    at Module._compile (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Object.Module._extensions..js",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 810,
+                    "columnNumber": 10,
+                    "source": "    at Object.Module._extensions..js (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Module.load",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 666,
+                    "columnNumber": 32,
+                    "source": "    at Module.load (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "tryModuleLoad",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 606,
+                    "columnNumber": 12,
+                    "source": "    at tryModuleLoad (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Function.Module._load",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 598,
+                    "columnNumber": 3,
+                    "source": "    at Function.Module._load (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Module.require",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 705,
+                    "columnNumber": 19,
+                    "source": "    at Module.require (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "require",
+                    "fileName": "internal/modules/cjs/helpers.js",
+                    "lineNumber": 14,
+                    "columnNumber": 16,
+                    "source": "    at require (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Object.<anonymous>",
+                    "fileName": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\reporter-test-calls.js",
+                    "lineNumber": 4,
+                    "columnNumber": 38,
+                    "source": "    at Object.<anonymous> (some-file:1:1)"
+                  }
+                ],
+                "isV8Frames": false
+              },
+              "errMsg": "Some error",
+              "pageDestUrl": "http://example.org"
+            },
+            {
+              "TEMPLATES": {},
+              "userAgent": "Firefox 47 / Mac OS X 10.10.1",
+              "testRunState": "inTest",
+              "type": "actionElementNotFoundError",
+              "isTestCafeError": true,
+              "callsite": {
+                "filename": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\test-callsite.js",
+                "lineNum": 3,
+                "callsiteFrameIdx": 0,
+                "stackFrames": [
+                  {
+                    "functionName": "someFunc",
+                    "fileName": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\test-callsite.js",
+                    "lineNumber": 4,
+                    "columnNumber": 11,
+                    "source": "    at someFunc (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Object.<anonymous>",
+                    "fileName": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\test-callsite.js",
+                    "lineNumber": 8,
+                    "columnNumber": 5,
+                    "source": "    at Object.<anonymous> (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Module._compile",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 799,
+                    "columnNumber": 30,
+                    "source": "    at Module._compile (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Object.Module._extensions..js",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 810,
+                    "columnNumber": 10,
+                    "source": "    at Object.Module._extensions..js (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Module.load",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 666,
+                    "columnNumber": 32,
+                    "source": "    at Module.load (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "tryModuleLoad",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 606,
+                    "columnNumber": 12,
+                    "source": "    at tryModuleLoad (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Function.Module._load",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 598,
+                    "columnNumber": 3,
+                    "source": "    at Function.Module._load (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Module.require",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 705,
+                    "columnNumber": 19,
+                    "source": "    at Module.require (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "require",
+                    "fileName": "internal/modules/cjs/helpers.js",
+                    "lineNumber": 14,
+                    "columnNumber": 16,
+                    "source": "    at require (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Object.<anonymous>",
+                    "fileName": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\reporter-test-calls.js",
+                    "lineNumber": 4,
+                    "columnNumber": 38,
+                    "source": "    at Object.<anonymous> (some-file:1:1)"
+                  }
+                ],
+                "isV8Frames": false
+              }
+            }
+          ],
           "durationMs": 74000,
           "unstable": false,
           "screenshotPath": "/screenshots/1445437598847"
@@ -33,6 +217,7 @@
         {
           "name": "Third test in first fixture",
           "errs": [],
+          "errsRaw": [],
           "durationMs": 74000,
           "unstable": false,
           "screenshotPath": null
@@ -46,6 +231,7 @@
         {
           "name": "First test in second fixture",
           "errs": [],
+          "errsRaw": [],
           "durationMs": 74000,
           "unstable": false,
           "screenshotPath": null
@@ -53,6 +239,7 @@
         {
           "name": "Second test in second fixture",
           "errs": [],
+          "errsRaw": [],
           "durationMs": 74000,
           "unstable": false,
           "screenshotPath": null
@@ -60,6 +247,7 @@
         {
           "name": "Third test in second fixture",
           "errs": [],
+          "errsRaw": [],
           "durationMs": 0,
           "unstable": false,
           "screenshotPath": null,
@@ -75,6 +263,93 @@
           "name": "First test in third fixture",
           "errs": [
             "- Error in beforeEach hook -\nThe specified selector does not match any element in the DOM tree.\n\nBrowser: Firefox 47 / Mac OS X 10.10.1\n\n   1 |var createCallsiteRecord = require (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)\n   at Object.<anonymous> (some-file:1:1)"
+          ],
+          "errsRaw": [
+            {
+              "TEMPLATES": {},
+              "userAgent": "Firefox 47 / Mac OS X 10.10.1",
+              "testRunState": "inBeforeEach",
+              "type": "actionElementNotFoundError",
+              "isTestCafeError": true,
+              "callsite": {
+                "filename": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\test-callsite.js",
+                "lineNum": 3,
+                "callsiteFrameIdx": 0,
+                "stackFrames": [
+                  {
+                    "functionName": "someFunc",
+                    "fileName": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\test-callsite.js",
+                    "lineNumber": 4,
+                    "columnNumber": 11,
+                    "source": "    at someFunc (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Object.<anonymous>",
+                    "fileName": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\test-callsite.js",
+                    "lineNumber": 8,
+                    "columnNumber": 5,
+                    "source": "    at Object.<anonymous> (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Module._compile",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 799,
+                    "columnNumber": 30,
+                    "source": "    at Module._compile (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Object.Module._extensions..js",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 810,
+                    "columnNumber": 10,
+                    "source": "    at Object.Module._extensions..js (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Module.load",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 666,
+                    "columnNumber": 32,
+                    "source": "    at Module.load (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "tryModuleLoad",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 606,
+                    "columnNumber": 12,
+                    "source": "    at tryModuleLoad (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Function.Module._load",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 598,
+                    "columnNumber": 3,
+                    "source": "    at Function.Module._load (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Module.require",
+                    "fileName": "internal/modules/cjs/loader.js",
+                    "lineNumber": 705,
+                    "columnNumber": 19,
+                    "source": "    at Module.require (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "require",
+                    "fileName": "internal/modules/cjs/helpers.js",
+                    "lineNumber": 14,
+                    "columnNumber": 16,
+                    "source": "    at require (some-file:1:1)"
+                  },
+                  {
+                    "functionName": "Object.<anonymous>",
+                    "fileName": "C:\\TFS\\GitHub\\htho\\testcafe-reporter-json-complete\\test\\utils\\reporter-test-calls.js",
+                    "lineNumber": 4,
+                    "columnNumber": 38,
+                    "source": "    at Object.<anonymous> (some-file:1:1)"
+                  }
+                ],
+                "isV8Frames": false
+              }
+            }
           ],
           "durationMs": 74000,
           "unstable": true,
