@@ -44,7 +44,8 @@ export default function () {
             });
         },
 
-        reportTaskDone (endTime, passed, warnings) {
+        reportTaskDone (endTime, passed, warnings, result) {
+            this.report.result   = result;
             this.report.passed   = passed;
             this.report.endTime  = endTime;
             this.report.warnings = warnings;

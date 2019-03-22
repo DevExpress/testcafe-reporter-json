@@ -174,7 +174,12 @@ module.exports = [
                 'Was unable to take screenshots because the screenshot directory is not specified. ' +
                 'To specify it, use the "-s" or "--screenshots" command line option or the ' +
                 '"screenshots" method of the test runner in case you are using API.'
-            ]
+            ],
+            {
+                passedCount:  4,
+                failedCount:  2,
+                skippedCount: 1
+            }
         ]
     }
 ];
