@@ -21,7 +21,7 @@ export default function () {
         },
 
         reportFixtureStart (name, path, meta) {
-            this.currentFixture = { name, path, tests: [], meta };
+            this.currentFixture = { name, path, meta, tests: [] };
             this.report.fixtures.push(this.currentFixture);
         },
 
@@ -33,8 +33,8 @@ export default function () {
 
             this.currentFixture.tests.push({
                 name,
-                errs,
                 meta,
+                errs,
 
                 durationMs:     testRunInfo.durationMs,
                 unstable:       testRunInfo.unstable,
