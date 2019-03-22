@@ -36,6 +36,7 @@ export default function () {
                 meta,
                 errs,
 
+                errsRaw:        testRunInfo.errs,
                 durationMs:     testRunInfo.durationMs,
                 unstable:       testRunInfo.unstable,
                 screenshotPath: testRunInfo.screenshotPath,
