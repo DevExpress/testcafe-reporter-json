@@ -25,14 +25,15 @@ export default function () {
             this.report.fixtures.push(this.currentFixture);
         },
 
-        reportTestDone (name, testRunInfo) {
+        reportTestDone (name, testRunInfo, meta) {
             var errs = testRunInfo.errs.map(err => this.formatError(err));
-
+            
             if (testRunInfo.skipped)
                 this.report.skipped++;
 
             this.currentFixture.tests.push({
                 name,
+                meta,
                 errs,
 
                 durationMs:     testRunInfo.durationMs,
