@@ -32,9 +32,9 @@ export default function () {
                 this.report.skipped++;
 
             this.currentFixture.tests.push({
-                name,
-                meta,
-                errs,
+                name: name,
+                meta: meta,
+                errs: errs,
 
                 durationMs:     testRunInfo.durationMs,
                 unstable:       testRunInfo.unstable,
