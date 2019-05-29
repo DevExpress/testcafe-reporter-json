@@ -35,5 +35,8 @@
     "publish-please": "^2.1.4",
     "read-file-relative": "^1.2.0",
     "testcafe": "0.9.0"
+  },
+  "dependencies": {
+    "testcafe-reporter-json-complete": "^2.1.1"
   }
 }
