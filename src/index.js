@@ -20,8 +20,8 @@ export default function () {
             this.report.total      = testCount;
         },
 
-        reportFixtureStart (name, path) {
-            this.currentFixture = { name, path, tests: [] };
+        reportFixtureStart (name, path, meta) {
+            this.currentFixture = { name: name, path: path, meta: meta, tests: [] };
             this.report.fixtures.push(this.currentFixture);
         },
 
