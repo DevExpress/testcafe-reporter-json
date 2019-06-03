@@ -36,6 +36,8 @@
     "read-file-relative": "^1.2.0",
     "testcafe": "0.9.0"
   },
-  "dependencies": {
+  "dependencies": {},
+  "engines": {
+    "node": ">=8.0.0"
   }
 }
