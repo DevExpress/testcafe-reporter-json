@@ -35,5 +35,9 @@
     "publish-please": "^2.1.4",
     "read-file-relative": "^1.2.0",
     "testcafe": "0.9.0"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=8.0.0"
   }
 }

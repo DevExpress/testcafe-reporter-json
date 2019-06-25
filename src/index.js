@@ -20,20 +20,21 @@ export default function () {
             this.report.total      = testCount;
         },
 
-        reportFixtureStart (name, path) {
-            this.currentFixture = { name, path, tests: [] };
+        reportFixtureStart (name, path, meta) {
+            this.currentFixture = { name: name, path: path, meta: meta, tests: [] };
             this.report.fixtures.push(this.currentFixture);
         },
 
-        reportTestDone (name, testRunInfo) {
+        reportTestDone (name, testRunInfo, meta) {
             var errs = testRunInfo.errs.map(err => this.formatError(err));
-
+            
             if (testRunInfo.skipped)
                 this.report.skipped++;
 
             this.currentFixture.tests.push({
-                name,
-                errs,
+                name: name,
+                meta: meta,
+                errs: errs,
 
                 durationMs:     testRunInfo.durationMs,
                 unstable:       testRunInfo.unstable,
