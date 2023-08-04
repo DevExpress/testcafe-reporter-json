@@ -29,7 +29,7 @@
     "del": "^1.2.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
-    "gulp-eslint": "^1.1.1",
+    "gulp-eslint": "^6.0.0",
     "gulp-mocha": "^2.2.0",
     "normalize-newline": "^1.0.2",
     "publish-please": "^2.1.4",
