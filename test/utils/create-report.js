@@ -11,7 +11,7 @@ module.exports = function createReport (withColors) {
         }
     };
 
-    var plugin = buildReporterPlugin(pluginFactory, outStream);
+    var plugin = buildReporterPlugin(pluginFactory.default, outStream);
 
     plugin.chalk.enabled = !plugin.noColors && withColors;
     plugin.symbols       = { ok: '✓', err: '✖' };
