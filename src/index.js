@@ -1,4 +1,4 @@
-export default function () {
+function pluginFactory () {
     return {
         noColors:       true,
         currentFixture: null,
@@ -52,3 +52,5 @@ export default function () {
         }
     };
 }
+
+module.exports = pluginFactory;

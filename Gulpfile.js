@@ -39,11 +39,11 @@ gulp.task('test', gulp.series('build', function () {
         }));
 }));
 
-gulp.task('preview', gulp.series('build', function () {
+gulp.task('preview', gulp.series('build', function (done) {
     var buildReporterPlugin = require('testcafe').embeddingUtils.buildReporterPlugin;
     var pluginFactory       = require('./lib');
     var reporterTestCalls   = require('./test/utils/reporter-test-calls');
-    var plugin              = buildReporterPlugin(pluginFactory.default);
+    var plugin              = buildReporterPlugin(pluginFactory);
 
     console.log();
 
@@ -51,5 +51,5 @@ gulp.task('preview', gulp.series('build', function () {
         plugin[call.method].apply(plugin, call.args);
     });
 
-    process.exit(0);
+    done();
 }));
