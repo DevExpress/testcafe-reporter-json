@@ -1,6 +1,9 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "extends": "eslint:recommended",
+  "parserOptions": {
+    "requireConfigFile": false
+  },
   "rules": {
     "no-alert": 2,
     "no-array-constructor": 2,
