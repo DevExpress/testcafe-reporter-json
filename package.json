@@ -30,8 +30,8 @@
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-eslint": "^6.0.0",
-    "gulp-mocha": "^2.2.0",
-    "normalize-newline": "^1.0.2",
+    "gulp-mocha": "^8.0.0",
+    "normalize-newline": "^4.1.0",
     "publish-please": "^5.5.2",
     "read-file-relative": "^1.2.0",
     "testcafe": "^3.5.0"
@@ -39,5 +39,8 @@
   "dependencies": {},
   "engines": {
     "node": ">=8.0.0"
+  },
+  "overrides": {
+    "lodash": "^4.17.21"
   }
 }

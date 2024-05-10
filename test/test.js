@@ -1,24 +1,27 @@
 var assert           = require('assert');
-var normalizeNewline = require('normalize-newline');
 var read             = require('read-file-relative').readSync;
 var createReport     = require('./utils/create-report');
 
-it('Should produce report with colors', function () {
+it('Should produce report with colors', async function () {
     var report   = createReport(true);
     var expected = read('./data/report-with-colors');
 
-    report   = normalizeNewline(report).trim();
-    expected = normalizeNewline(expected).trim();
+    var normalizeNewline = await import('normalize-newline');
+
+    report   = normalizeNewline.default(report).trim();
+    expected = normalizeNewline.default(expected).trim();
 
     assert.strictEqual(report, expected);
 });
 
-it('Should produce report without colors', function () {
+it('Should produce report without colors', async function () {
     var report   = createReport(false);
     var expected = read('./data/report-without-colors');
 
-    report   = normalizeNewline(report).trim();
-    expected = normalizeNewline(expected).trim();
+    var normalizeNewline = await import('normalize-newline');
+
+    report   = normalizeNewline.default(report).trim();
+    expected = normalizeNewline.default(expected).trim();
 
     assert.strictEqual(report, expected);
 });
