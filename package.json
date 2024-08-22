@@ -34,9 +34,8 @@
     "normalize-newline": "^4.1.0",
     "publish-please": "^5.5.2",
     "read-file-relative": "^1.2.0",
-    "testcafe": "^3.5.0"
+    "testcafe": "^3.6.2"
   },
-  "dependencies": {},
   "engines": {
     "node": ">=8.0.0"
   },
