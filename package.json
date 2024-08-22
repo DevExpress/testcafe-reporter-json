@@ -25,6 +25,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.1",
+    "@testcafe/publish-please": "^5.6.0",
     "callsite-record": "^3.2.0",
     "del": "^1.2.0",
     "gulp": "^4.0.2",
@@ -32,14 +33,10 @@
     "gulp-eslint": "^6.0.0",
     "gulp-mocha": "^10.0.1",
     "normalize-newline": "^4.1.0",
-    "publish-please": "^5.5.2",
     "read-file-relative": "^1.2.0",
     "testcafe": "^3.6.2"
   },
   "engines": {
     "node": ">=8.0.0"
-  },
-  "overrides": {
-    "lodash": "^4.17.21"
   }
 }
